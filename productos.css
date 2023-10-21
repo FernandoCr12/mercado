@@ -1,0 +1,168 @@
+body{
+    background-color: hsl(41, 77%, 46%);
+}
+.sidebar {
+    position: fixed; /* Fija el sidebar en la posición */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 150px; /* Ancho del sidebar */
+    background-color: hsl(41, 80%, 42%); /* Color de fondo */
+    color: #000000; /* Color de texto */
+    padding-top: 20px; /* Espacio superior */
+    padding-right: 10px; /* Espacio derecho para separar los elementos */
+}
+
+.circle-image {
+    border-radius: 50%; /* Esto hace que la imagen tenga forma circular */
+    width: 100px; /* Ajusta el ancho de la imagen según tus preferencias */
+    height: 100px; /* Ajusta la altura de la imagen según tus preferencias */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 10px;
+    text-align: center;
+}
+
+.sidebar a {
+    left: 150px;
+    text-decoration: none;
+    color: #000000;
+    display: block;
+}
+
+.sidebar a:hover {
+    border-radius: 4px;
+    background-color: hsl(41, 57%, 58%); /* Color de fondo al pasar el ratón */
+    transform: scale(1.20);
+}
+
+
+.content {
+    margin-left: 180px; /* Ajusta el margen izquierdo del contenido principal */
+}
+.dashboard-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1 11 calc(25% - 10px); /* Establece el ancho de cada tarjeta */
+    min-width: calc(25% - 10px);
+    max-width: calc(25% - 10px);
+    margin: 5px;
+    padding: 25px;
+    background-color: hsl(41, 80%, 42%);
+    border-radius: 5px;
+    box-shadow: 0 7px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Query para 2 tarjetas por fila en pantallas de 200px o más */
+@media (max-width: 200px) {
+    .card {
+        flex: 1 1 calc(50% - 10px);
+        min-width: calc(50% - 10px);
+        max-width: calc(50% - 10px);
+    }
+}
+
+/* Media Query para 1 tarjeta por fila en pantallas de 400px o más */
+@media (max-width: 400px) {
+    .card {
+        flex: 1 1 calc(100% - 10px);
+        min-width: calc(100% - 10px);
+        max-width: calc(100% - 10px);
+    }
+}
+
+/* Media Query para 4 tarjetas por fila en pantallas de 100% o más */
+@media (min-width: 100%) {
+    .card {
+        flex: 1 1 calc(25% - 10px);
+        min-width: calc(25% - 10px);
+        max-width: calc(25% - 10px);
+    }
+}
+
+
+.card:hover {
+    background-color: hsl(41, 57%, 58%);
+    cursor: pointer;
+    transform: scale(1.05);
+}
+/* Estilos para el tabla */
+
+
+table {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ba9024;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #8b6f28;
+}
+
+tr:nth-child(even) {
+    background-color: #956f23;
+}
+
+/* lupa */
+
+/* productos.css */
+
+.search-container {
+    display: flex;
+    margin-bottom: 20px;
+    
+    
+}
+
+#search {
+    width: 70%;
+    padding: 10px;
+    border-radius: 15px;
+    color: #956f23;
+    background-color: #8b6f28;
+    
+    
+}
+
+.search-button {
+    border: none;
+    background-color: #4CAF50;
+    padding: 10px 15px;
+    border-radius: 10px;
+
+    cursor: pointer;
+    
+}
+.search-button:hover {
+    transform: scale(1.10);
+}
+
+.search-button img {
+    width: 25px;
+    height: 20px;
+    vertical-align: middle;
+    cursor: pointer;
+
+}
+
+.search-button img:hover {
+    opacity: 0.8;
+    
+}
+
